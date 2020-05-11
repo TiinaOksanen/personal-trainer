@@ -23,4 +23,14 @@ p {
   background-color: rgba(169, 169, 169, 0.233);
 }
 
+.header {
+  float: inline;
+}
 
+.dialog {
+  height: 400px;
+}
+
+.button {
+  text-align: center;
+}
