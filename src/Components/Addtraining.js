@@ -6,7 +6,7 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import MenuItem from "@material-ui/core/MenuItem";
-import DateTimePicker from 'react-datetime-picker'
+import DateTimePicker from 'react-datetime-picker';
 
 export default function Addtraining(props) {
     const [open, setOpen] = useState(false);
@@ -50,10 +50,11 @@ export default function Addtraining(props) {
 
     return (
         <div>
+          
           <Button style={{margin: 5}} variant="outlined" color="primary" onClick={handleClickOpen}>
         Add new Training
         </Button>
-
+    
     <Dialog  open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
          <DialogTitle id="form-dialog-title">Add new training to customer</DialogTitle>
             <DialogContent className="dialog">

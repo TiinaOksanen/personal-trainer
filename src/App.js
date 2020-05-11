@@ -24,6 +24,7 @@ import AccountBoxIcon from '@material-ui/icons/AccountBox';
 import DirectionBikeIcon from '@material-ui/icons/DirectionsBike';
 import TodayIcon from '@material-ui/icons/Today';
 import BarChartIcon from '@material-ui/icons/BarChart';
+import Bigcalendar from './Components/Bigcalendar';
 
 const drawerWidth = 240;
 
@@ -147,7 +148,7 @@ function App() {
           <div>
             <Link to="/" className="linkki"><ListItem onClick={<Customer/>} className="hover" ><ListItemIcon><AccountBoxIcon/></ListItemIcon><ListItemText primary="Customer" /></ListItem></Link>
             <Link to="/training"  className="linkki"><ListItem onClick={<Training/>} className="hover"><ListItemIcon><DirectionBikeIcon/></ListItemIcon><ListItemText primary="Trainings" /></ListItem></Link>
-            <Link to="/calendar"  className="linkki"><ListItem onClick={<Training/>} className="hover"><ListItemIcon><TodayIcon/></ListItemIcon><ListItemText primary="Calendar" /></ListItem></Link>
+            <Link to="/bigcalendar"  className="linkki"><ListItem onClick={<Bigcalendar/>} className="hover"><ListItemIcon><TodayIcon/></ListItemIcon><ListItemText primary="Calendar" /></ListItem></Link>
             <Link to="/statistics"  className="linkki"><ListItem onClick={<Training/>} className="hover"><ListItemIcon><BarChartIcon/></ListItemIcon><ListItemText primary="Statistics" /></ListItem></Link>
           </div>
         </BrowserRouter>
@@ -163,6 +164,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Customer} />
           <Route path="/Training" component={Training} />
+          <Route path="/bigcalendar" component={Bigcalendar} />
         </Switch>
         </BrowserRouter>
        

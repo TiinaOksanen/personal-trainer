@@ -5,6 +5,7 @@ import ReactTable from 'react-table';
 import 'react-table/react-table.css';
 import IconButton from '@material-ui/core/IconButton';
 import DeleteIcon from '@material-ui/icons/Delete';
+import Tooltip from '@material-ui/core/Tooltip';
 
 
 export default function Training() {
@@ -45,9 +46,9 @@ const columns = [
 
     {
         Cell: row => 
-        <IconButton className="button"  onClick={() => deleteTraining(row.original.id)}>
+        <Tooltip title="Delete"><IconButton className="button"  onClick={() => deleteTraining(row.original.id)}>
             <DeleteIcon /> 
-            </IconButton>,
+            </IconButton></Tooltip>,
         filterable: false,
         sortable: false,
         width: 70,

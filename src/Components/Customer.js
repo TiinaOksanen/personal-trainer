@@ -4,6 +4,7 @@ import Addcustomer from './Addcustomer';
 import Editcustomer from './Editcustomer';
 import IconButton from '@material-ui/core/IconButton';
 import DeleteIcon from '@material-ui/icons/Delete';
+import Tooltip from '@material-ui/core/Tooltip';
 
 export default function Customer() {
 const [customers, setCustomers] = useState([]);
@@ -58,7 +59,7 @@ const columns = [
         Cell: row => <Editcustomer className="button" updateCustomer={updateCustomer} customer={row.original} />  
     },
     {
-        Cell: row => (<IconButton className="button" onClick={() => deleteCustomer(row.original.links[0].href)}><DeleteIcon /> </IconButton>),
+        Cell: row => (<Tooltip title="Delete"><IconButton className="button" onClick={() => deleteCustomer(row.original.links[0].href)}><DeleteIcon /> </IconButton></Tooltip>),
         filterable: false,
         sortable: false,
         width: 70,
