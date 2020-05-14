@@ -149,7 +149,6 @@ function App() {
             <Link to="/" className="linkki"><ListItem onClick={<Customer/>} className="hover" ><ListItemIcon><AccountBoxIcon/></ListItemIcon><ListItemText primary="Customer" /></ListItem></Link>
             <Link to="/training"  className="linkki"><ListItem onClick={<Training/>} className="hover"><ListItemIcon><DirectionBikeIcon/></ListItemIcon><ListItemText primary="Trainings" /></ListItem></Link>
             <Link to="/bigcalendar"  className="linkki"><ListItem onClick={<Bigcalendar/>} className="hover"><ListItemIcon><TodayIcon/></ListItemIcon><ListItemText primary="Calendar" /></ListItem></Link>
-            <Link to="/statistics"  className="linkki"><ListItem onClick={<Training/>} className="hover"><ListItemIcon><BarChartIcon/></ListItemIcon><ListItemText primary="Statistics" /></ListItem></Link>
           </div>
         </BrowserRouter>
       </List>

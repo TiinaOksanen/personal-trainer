@@ -8,6 +8,7 @@ const localizer = momentLocalizer(moment)
 export default function Bigcalendar(props) {
 
     const [events, setEvents] = useState([]);
+    
 
   useEffect(() => {
     fetchTrainings();
